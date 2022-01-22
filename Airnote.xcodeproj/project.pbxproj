@@ -12,6 +12,7 @@
 		65CB5252279C53A0000B5F05 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 65CB5251279C53A0000B5F05 /* Experience.rcproject */; };
 		65CB5254279C53A1000B5F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65CB5253279C53A1000B5F05 /* Assets.xcassets */; };
 		65CB5257279C53A1000B5F05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65CB5256279C53A1000B5F05 /* Preview Assets.xcassets */; };
+		65CB525E279C57DA000B5F05 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB525D279C57DA000B5F05 /* ARViewContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		65CB5251279C53A0000B5F05 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		65CB5253279C53A1000B5F05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65CB5256279C53A1000B5F05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		65CB525D279C57DA000B5F05 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				65CB5251279C53A0000B5F05 /* Experience.rcproject */,
 				65CB5253279C53A1000B5F05 /* Assets.xcassets */,
 				65CB5255279C53A1000B5F05 /* Preview Content */,
+				65CB525D279C57DA000B5F05 /* ARViewContainer.swift */,
 			);
 			path = Airnote;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65CB5250279C53A0000B5F05 /* ContentView.swift in Sources */,
+				65CB525E279C57DA000B5F05 /* ARViewContainer.swift in Sources */,
 				65CB524E279C53A0000B5F05 /* AppDelegate.swift in Sources */,
 				65CB5252279C53A0000B5F05 /* Experience.rcproject in Sources */,
 			);
