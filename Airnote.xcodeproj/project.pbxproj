@@ -16,6 +16,9 @@
 		BF3CD5A2279C7278008E1064 /* TranscriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3CD5A1279C7278008E1064 /* TranscriptViewController.swift */; };
 		BF3CD5A4279C72DF008E1064 /* TranscriptUIViewControllerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3CD5A3279C72DF008E1064 /* TranscriptUIViewControllerContainer.swift */; };
 		BF3CD5A7279C740A008E1064 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = BF3CD5A6279C740A008E1064 /* Starscream */; };
+		BF3CD5A9279C94E5008E1064 /* AirNoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3CD5A8279C94E5008E1064 /* AirNoteModel.swift */; };
+		BF3CD5AB279C95EE008E1064 /* AirNoteDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3CD5AA279C95EE008E1064 /* AirNoteDoc.swift */; };
+		BF3CD5AD279C9DBB008E1064 /* AirNoteDocVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3CD5AC279C9DBB008E1064 /* AirNoteDocVIew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		65CB525D279C57DA000B5F05 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 		BF3CD5A1279C7278008E1064 /* TranscriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptViewController.swift; sourceTree = "<group>"; };
 		BF3CD5A3279C72DF008E1064 /* TranscriptUIViewControllerContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptUIViewControllerContainer.swift; sourceTree = "<group>"; };
+		BF3CD5A8279C94E5008E1064 /* AirNoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirNoteModel.swift; sourceTree = "<group>"; };
+		BF3CD5AA279C95EE008E1064 /* AirNoteDoc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirNoteDoc.swift; sourceTree = "<group>"; };
+		BF3CD5AC279C9DBB008E1064 /* AirNoteDocVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirNoteDocVIew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +69,10 @@
 			children = (
 				65CB524D279C53A0000B5F05 /* AppDelegate.swift */,
 				65CB524F279C53A0000B5F05 /* ContentView.swift */,
+				BF3CD5AC279C9DBB008E1064 /* AirNoteDocVIew.swift */,
+				BF3CD5A8279C94E5008E1064 /* AirNoteModel.swift */,
 				BF3CD5A1279C7278008E1064 /* TranscriptViewController.swift */,
+				BF3CD5AA279C95EE008E1064 /* AirNoteDoc.swift */,
 				BF3CD5A3279C72DF008E1064 /* TranscriptUIViewControllerContainer.swift */,
 				65CB5251279C53A0000B5F05 /* Experience.rcproject */,
 				65CB5253279C53A1000B5F05 /* Assets.xcassets */,
@@ -158,9 +167,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF3CD5A2279C7278008E1064 /* TranscriptViewController.swift in Sources */,
+				BF3CD5AD279C9DBB008E1064 /* AirNoteDocVIew.swift in Sources */,
 				BF3CD5A4279C72DF008E1064 /* TranscriptUIViewControllerContainer.swift in Sources */,
 				65CB5250279C53A0000B5F05 /* ContentView.swift in Sources */,
+				BF3CD5AB279C95EE008E1064 /* AirNoteDoc.swift in Sources */,
 				65CB525E279C57DA000B5F05 /* ARViewContainer.swift in Sources */,
+				BF3CD5A9279C94E5008E1064 /* AirNoteModel.swift in Sources */,
 				65CB524E279C53A0000B5F05 /* AppDelegate.swift in Sources */,
 				65CB5252279C53A0000B5F05 /* Experience.rcproject in Sources */,
 			);
@@ -204,6 +216,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = S9V3P3QHB4;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -265,6 +278,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = S9V3P3QHB4;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -293,7 +307,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Airnote/Preview Content\"";
-				DEVELOPMENT_TEAM = Q76T4L8CYR;
+				DEVELOPMENT_TEAM = S9V3P3QHB4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -309,7 +323,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lambda-shuttle.Airnote";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.cam.s955.airnote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -325,7 +339,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Airnote/Preview Content\"";
-				DEVELOPMENT_TEAM = Q76T4L8CYR;
+				DEVELOPMENT_TEAM = S9V3P3QHB4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -341,7 +355,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lambda-shuttle.Airnote";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.cam.ac.sl955.airnote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
