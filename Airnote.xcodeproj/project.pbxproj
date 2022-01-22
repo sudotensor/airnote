@@ -13,6 +13,9 @@
 		65CB5254279C53A1000B5F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65CB5253279C53A1000B5F05 /* Assets.xcassets */; };
 		65CB5257279C53A1000B5F05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65CB5256279C53A1000B5F05 /* Preview Assets.xcassets */; };
 		65CB525E279C57DA000B5F05 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB525D279C57DA000B5F05 /* ARViewContainer.swift */; };
+		BF3CD5A2279C7278008E1064 /* TranscriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3CD5A1279C7278008E1064 /* TranscriptViewController.swift */; };
+		BF3CD5A4279C72DF008E1064 /* TranscriptUIViewControllerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3CD5A3279C72DF008E1064 /* TranscriptUIViewControllerContainer.swift */; };
+		BF3CD5A7279C740A008E1064 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = BF3CD5A6279C740A008E1064 /* Starscream */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,8 @@
 		65CB5253279C53A1000B5F05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65CB5256279C53A1000B5F05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		65CB525D279C57DA000B5F05 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		BF3CD5A1279C7278008E1064 /* TranscriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptViewController.swift; sourceTree = "<group>"; };
+		BF3CD5A3279C72DF008E1064 /* TranscriptUIViewControllerContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptUIViewControllerContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF3CD5A7279C740A008E1064 /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +63,8 @@
 			children = (
 				65CB524D279C53A0000B5F05 /* AppDelegate.swift */,
 				65CB524F279C53A0000B5F05 /* ContentView.swift */,
+				BF3CD5A1279C7278008E1064 /* TranscriptViewController.swift */,
+				BF3CD5A3279C72DF008E1064 /* TranscriptUIViewControllerContainer.swift */,
 				65CB5251279C53A0000B5F05 /* Experience.rcproject */,
 				65CB5253279C53A1000B5F05 /* Assets.xcassets */,
 				65CB5255279C53A1000B5F05 /* Preview Content */,
@@ -89,6 +97,9 @@
 			dependencies = (
 			);
 			name = Airnote;
+			packageProductDependencies = (
+				BF3CD5A6279C740A008E1064 /* Starscream */,
+			);
 			productName = Airnote;
 			productReference = 65CB524A279C53A0000B5F05 /* Airnote.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 65CB5241279C53A0000B5F05;
+			packageReferences = (
+				BF3CD5A5279C740A008E1064 /* XCRemoteSwiftPackageReference "Starscream" */,
+			);
 			productRefGroup = 65CB524B279C53A0000B5F05 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,6 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF3CD5A2279C7278008E1064 /* TranscriptViewController.swift in Sources */,
+				BF3CD5A4279C72DF008E1064 /* TranscriptUIViewControllerContainer.swift in Sources */,
 				65CB5250279C53A0000B5F05 /* ContentView.swift in Sources */,
 				65CB525E279C57DA000B5F05 /* ARViewContainer.swift in Sources */,
 				65CB524E279C53A0000B5F05 /* AppDelegate.swift in Sources */,
@@ -281,6 +297,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "for transcripting";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
@@ -312,6 +329,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "for transcripting";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
@@ -353,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF3CD5A5279C740A008E1064 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF3CD5A6279C740A008E1064 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF3CD5A5279C740A008E1064 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 65CB5242279C53A0000B5F05 /* Project object */;
 }

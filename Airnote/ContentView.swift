@@ -10,6 +10,7 @@ import RealityKit
 
 struct ContentView : View {
   @State private var isShowingViewer = false
+  @State private var showTranscript = false
   
   var body: some View {
     ZStack {
@@ -18,13 +19,22 @@ struct ContentView : View {
       }
       VStack {
         Spacer()
-        Button("Tap to toggle viewer") {
-          isShowingViewer = !isShowingViewer
+        HStack{
+          Button("Tap to toggle viewer") {
+            isShowingViewer = !isShowingViewer
+          }
+          .padding()
+          .background(.blue)
+          .foregroundColor(.white)
+          .clipShape(RoundedRectangle(cornerRadius: 12.0))
+          Spacer()
+          Button("Show transcript") {
+            showTranscript = true
+          }
         }
-        .padding()
-        .background(.blue)
-        .foregroundColor(.white)
-        .clipShape(RoundedRectangle(cornerRadius: 12.0))
+
+      }.sheet(isPresented: $showTranscript) {
+        TranscriptUIViewControllerContainer()
       }
     }
   }
