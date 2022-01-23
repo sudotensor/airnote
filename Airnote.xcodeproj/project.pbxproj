@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		656546EB279CB8ED00137CEC /* NoteSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656546EA279CB8ED00137CEC /* NoteSheet.swift */; };
+		6597A1AC279D0F9600773EFC /* MultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597A1AB279D0F9600773EFC /* MultipeerSession.swift */; };
+		6597A1B2279D38F300773EFC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597A1B1279D38F300773EFC /* Utilities.swift */; };
 		65CB524E279C53A0000B5F05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB524D279C53A0000B5F05 /* AppDelegate.swift */; };
 		65CB5254279C53A1000B5F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65CB5253279C53A1000B5F05 /* Assets.xcassets */; };
 		65CB5257279C53A1000B5F05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65CB5256279C53A1000B5F05 /* Preview Assets.xcassets */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		656546EA279CB8ED00137CEC /* NoteSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSheet.swift; sourceTree = "<group>"; };
+		6597A1AB279D0F9600773EFC /* MultipeerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerSession.swift; sourceTree = "<group>"; };
+		6597A1B1279D38F300773EFC /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		65CB524A279C53A0000B5F05 /* Airnote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airnote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CB524D279C53A0000B5F05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65CB5253279C53A1000B5F05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 				65CB5255279C53A1000B5F05 /* Preview Content */,
 				65CB525D279C57DA000B5F05 /* ARViewContainer.swift */,
 				656546EA279CB8ED00137CEC /* NoteSheet.swift */,
+				6597A1AB279D0F9600773EFC /* MultipeerSession.swift */,
+				6597A1B1279D38F300773EFC /* Utilities.swift */,
 			);
 			path = Airnote;
 			sourceTree = "<group>";
@@ -166,7 +172,9 @@
 				BF3CD5AD279C9DBB008E1064 /* ContentView.swift in Sources */,
 				CFB485CC279CE32900440DAF /* Experience.rcproject in Sources */,
 				BF3CD5AB279C95EE008E1064 /* AirNoteDocument.swift in Sources */,
+				6597A1AC279D0F9600773EFC /* MultipeerSession.swift in Sources */,
 				65CB525E279C57DA000B5F05 /* ARViewContainer.swift in Sources */,
+				6597A1B2279D38F300773EFC /* Utilities.swift in Sources */,
 				BF3CD5A9279C94E5008E1064 /* AirNoteModel.swift in Sources */,
 				65CB524E279C53A0000B5F05 /* AppDelegate.swift in Sources */,
 			);

@@ -11,17 +11,20 @@ enum SheetAction: String {
   case add = "Add Note", edit = "Edit Note"
 }
 
-enum NoteColour: Int {
-  case yellow = 0, pink = 1, green = 2
+enum NoteColour: String, CodingKey {
+  case yellow = "yellow", pink = "pink", green = "green"
 }
 
 struct NoteSheet: View {
   @Binding var showSheet: Bool
-  @Binding var arViewContainer: ARViewContainer
-  var mode: SheetAction = .add
+  
+  @ObservedObject var arController: ARController
   @ObservedObject var document: AirNoteDocument
+  
   @State private var noteColour: NoteColour = .yellow
+  
   var size: CGFloat = 36
+  var mode: SheetAction = .add
   
   var body: some View {
     NavigationView {
@@ -71,7 +74,7 @@ struct NoteSheet: View {
         self.showSheet = false
       }, trailing: Button("Save") {
         /* Create and add a note to the scene or update its contents */
-        arViewContainer.addNoteEntity(text: document.transcriptText, colour: noteColour)
+        arController.addNoteEntity(text: document.transcriptText, colour: noteColour)
         self.showSheet = false
       })
     }

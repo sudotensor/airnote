@@ -9,15 +9,18 @@ import SwiftUI
 import RealityKit
 
 struct ContentView : View {
+  @ObservedObject var document: AirNoteDocument
+  @StateObject var arController = ARController()
+  
   @State private var showSheet = false
   @State private var microphoneEnabled = false
-  @State private var arViewContainer = ARViewContainer()
-  @ObservedObject var document: AirNoteDocument
   
   var body: some View {
     ZStack {
-      arViewContainer.edgesIgnoringSafeArea(.all)
+      ARControllerWrapper(controller: arController).edgesIgnoringSafeArea(.all)
       VStack {
+        Text(arController.model.mapStatusLabel).padding()
+        Text(arController.model.sessionInfoLabel).padding()
         if document.transcriptText.count != 0 {
           VStack {
             Text(document.transcriptText).padding()
@@ -83,7 +86,7 @@ struct ContentView : View {
               print(error)
             }
           }) {
-            NoteSheet(showSheet: $showSheet, arViewContainer: $arViewContainer, document: document)
+            NoteSheet(showSheet: $showSheet, arController: arController, document: document)
           }
         }
       }

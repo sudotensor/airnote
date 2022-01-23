@@ -4,8 +4,8 @@
 <dict>
 	<key>NSBonjourServices</key>
 	<array>
-		<string>_airnote._tcp</string>
-		<string>_airnote._udp</string>
+		<string>_ar-multi-sample._tcp</string>
+		<string>_ar-multi-sample._udp</string>
 	</array>
 </dict>
 </plist>
