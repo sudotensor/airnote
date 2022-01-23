@@ -140,8 +140,7 @@ class AirNoteDocument: ObservableObject, WebSocketDelegate {
       let transcript = response.channel.alternatives.first!.transcript
       
       if response.isFinal && !transcript.isEmpty {
-        
-        addText(" " + transcript)
+        addText(transcript + " ")
       }
     case .error(let error):
       print(error ?? "")

@@ -27,7 +27,7 @@ struct NoteSheet: View {
     NavigationView {
       Form {
         Section(header: Text("Note Content")) {
-          Text(document.transcriptText)
+          Text(document.transcriptText).padding(8)
         }
         
         Section(header: Text("Note Colour")) {
@@ -62,6 +62,7 @@ struct NoteSheet: View {
               .background(noteColour == .green ? .green.opacity(0.5) : .clear)
               .cornerRadius(CGFloat(size / 2 + 4))
           }
+          .padding(8)
         }
       }
       .listStyle(.insetGrouped)

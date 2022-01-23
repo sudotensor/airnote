@@ -18,7 +18,13 @@ struct ContentView : View {
     ZStack {
       arViewContainer.edgesIgnoringSafeArea(.all)
       VStack {
-        Text(document.transcriptText).padding()
+        if document.transcriptText.count != 0 {
+          VStack {
+            Text(document.transcriptText).padding()
+          }
+          .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 8))
+          .padding(8)
+        }
         Spacer()
         VStack {
           Button(action: {
