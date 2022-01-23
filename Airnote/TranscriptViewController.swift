@@ -110,15 +110,15 @@ extension TranscriptViewController: WebSocketDelegate {
     }
 }
 
-struct DeepgramResponse: Codable {
-    let isFinal: Bool
-    let channel: Channel
-    
-    struct Channel: Codable {
-        let alternatives: [Alternatives]
-    }
-    
-    struct Alternatives: Codable {
-        let transcript: String
-    }
-}
+//struct DeepgramResponse: Codable {
+//    let isFinal: Bool
+//    let channel: Channel
+//
+//    struct Channel: Codable {
+//        let alternatives: [Alternatives]
+//    }
+//
+//    struct Alternatives: Codable {
+//        let transcript: String
+//    }
+//}

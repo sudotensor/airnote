@@ -8,7 +8,6 @@
 import Foundation
 
 struct AirNoteModel {
-  
   var transcript: String
   
   mutating func addText(_ text: String) {
@@ -16,8 +15,6 @@ struct AirNoteModel {
   }
   
   init() {
-    transcript = "init test"
-    
+    transcript = ""
   }
-  
 }
