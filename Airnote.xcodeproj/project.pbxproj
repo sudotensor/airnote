@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		656546EB279CB8ED00137CEC /* NoteSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656546EA279CB8ED00137CEC /* NoteSheet.swift */; };
 		65CB524E279C53A0000B5F05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB524D279C53A0000B5F05 /* AppDelegate.swift */; };
-		65CB5252279C53A0000B5F05 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 65CB5251279C53A0000B5F05 /* Experience.rcproject */; };
 		65CB5254279C53A1000B5F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65CB5253279C53A1000B5F05 /* Assets.xcassets */; };
 		65CB5257279C53A1000B5F05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65CB5256279C53A1000B5F05 /* Preview Assets.xcassets */; };
 		65CB525E279C57DA000B5F05 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB525D279C57DA000B5F05 /* ARViewContainer.swift */; };
@@ -17,19 +16,21 @@
 		BF3CD5A9279C94E5008E1064 /* AirNoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3CD5A8279C94E5008E1064 /* AirNoteModel.swift */; };
 		BF3CD5AB279C95EE008E1064 /* AirNoteDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3CD5AA279C95EE008E1064 /* AirNoteDocument.swift */; };
 		BF3CD5AD279C9DBB008E1064 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3CD5AC279C9DBB008E1064 /* ContentView.swift */; };
+		CFB485CC279CE32900440DAF /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = CFB485CB279CE32900440DAF /* Experience.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		656546EA279CB8ED00137CEC /* NoteSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSheet.swift; sourceTree = "<group>"; };
 		65CB524A279C53A0000B5F05 /* Airnote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airnote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CB524D279C53A0000B5F05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		65CB5251279C53A0000B5F05 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		65CB5253279C53A1000B5F05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65CB5256279C53A1000B5F05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		65CB525D279C57DA000B5F05 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 		BF3CD5A8279C94E5008E1064 /* AirNoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirNoteModel.swift; sourceTree = "<group>"; };
 		BF3CD5AA279C95EE008E1064 /* AirNoteDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirNoteDocument.swift; sourceTree = "<group>"; };
 		BF3CD5AC279C9DBB008E1064 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CFB485CB279CE32900440DAF /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+		CFB485D3279CF82500440DAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +64,12 @@
 		65CB524C279C53A0000B5F05 /* Airnote */ = {
 			isa = PBXGroup;
 			children = (
+				CFB485D3279CF82500440DAF /* Info.plist */,
+				CFB485CB279CE32900440DAF /* Experience.rcproject */,
 				65CB524D279C53A0000B5F05 /* AppDelegate.swift */,
 				BF3CD5AC279C9DBB008E1064 /* ContentView.swift */,
 				BF3CD5A8279C94E5008E1064 /* AirNoteModel.swift */,
 				BF3CD5AA279C95EE008E1064 /* AirNoteDocument.swift */,
-				65CB5251279C53A0000B5F05 /* Experience.rcproject */,
 				65CB5253279C53A1000B5F05 /* Assets.xcassets */,
 				65CB5255279C53A1000B5F05 /* Preview Content */,
 				65CB525D279C57DA000B5F05 /* ARViewContainer.swift */,
@@ -162,11 +164,11 @@
 			files = (
 				656546EB279CB8ED00137CEC /* NoteSheet.swift in Sources */,
 				BF3CD5AD279C9DBB008E1064 /* ContentView.swift in Sources */,
+				CFB485CC279CE32900440DAF /* Experience.rcproject in Sources */,
 				BF3CD5AB279C95EE008E1064 /* AirNoteDocument.swift in Sources */,
 				65CB525E279C57DA000B5F05 /* ARViewContainer.swift in Sources */,
 				BF3CD5A9279C94E5008E1064 /* AirNoteModel.swift in Sources */,
 				65CB524E279C53A0000B5F05 /* AppDelegate.swift in Sources */,
-				65CB5252279C53A0000B5F05 /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,10 +302,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Airnote/Preview Content\"";
-				DEVELOPMENT_TEAM = Q76T4L8CYR;
+				DEVELOPMENT_TEAM = A8Q267B4R7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Airnote/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "We scan devices on your local network to start a collaborative session.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "for transcripting";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -316,7 +320,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lambda.airnote;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tom-zhao.airnote";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -334,10 +338,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Airnote/Preview Content\"";
-				DEVELOPMENT_TEAM = Q76T4L8CYR;
+				DEVELOPMENT_TEAM = A8Q267B4R7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Airnote/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "We scan devices on your local network to start a collaborative session.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "for transcripting";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -350,7 +356,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lambda.airnote;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tom-zhao.airnote";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;

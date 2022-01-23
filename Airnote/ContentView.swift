@@ -10,19 +10,20 @@ import RealityKit
 
 struct ContentView : View {
   @State private var showSheet = false
-  @State private var showTranscript = false
+  @State private var microphoneEnabled = false
+  @State private var arViewContainer = ARViewContainer()
   @ObservedObject var document: AirNoteDocument
   
   var body: some View {
     ZStack {
-      ARViewContainer().edgesIgnoringSafeArea(.all)
+      arViewContainer.edgesIgnoringSafeArea(.all)
       VStack {
         Text(document.transcriptText).padding()
         Spacer()
         VStack {
           Button(action: {
-            if !showTranscript {
-              showTranscript = true
+            if !microphoneEnabled {
+              microphoneEnabled = true
               do {
                 try document.startAnalyseData()
               } catch {
@@ -30,16 +31,16 @@ struct ContentView : View {
               }
             }
             else {
-              showTranscript = false
+              microphoneEnabled = false
               document.stopAnalyseData()
             }
           }) {
             VStack {
-              Image(systemName: showTranscript ? "mic.fill" : "mic.slash.fill")
+              Image(systemName: microphoneEnabled ? "mic.fill" : "mic.slash.fill")
                 .font(.system(size: 20))
             }
             .frame(minWidth: 0, maxWidth: 50, minHeight: 0, maxHeight: 50)
-            .background(showTranscript ? .blue : .red)
+            .background(microphoneEnabled ? .blue : .red)
             .foregroundColor(.white)
             .cornerRadius(8)
             .padding([.top, .leading, .trailing], 16)
@@ -47,6 +48,9 @@ struct ContentView : View {
           }
           
           Button(action: {
+            if microphoneEnabled {
+              document.stopAnalyseData()
+            }
             self.showSheet = true
           }) {
             HStack {
@@ -63,8 +67,17 @@ struct ContentView : View {
             .padding([.top, .leading, .trailing], 16)
             .padding(.bottom, 8)
           }
-          .sheet(isPresented: $showSheet) {
-            NoteSheet(showSheet: $showSheet)
+          .sheet(isPresented: $showSheet, onDismiss: {
+            document.clearTranscript()
+            do {
+              if (microphoneEnabled) {
+                try document.startAnalyseData()
+              }
+            } catch {
+              print(error)
+            }
+          }) {
+            NoteSheet(showSheet: $showSheet, arViewContainer: $arViewContainer, document: document)
           }
         }
       }

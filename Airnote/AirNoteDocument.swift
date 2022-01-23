@@ -67,7 +67,10 @@ class AirNoteDocument: ObservableObject, WebSocketDelegate {
     airNote.transcript
   }
   
-  
+  func clearTranscript() {
+    airNote.transcript = ""
+  }
+    
   func setupEngine() {
     engine = AVAudioEngine()
     converterNode = AVAudioMixerNode()

@@ -1,3 +1,17 @@
 [
-
+  {
+    "libraryIdentifier" : "255745a52715a3f62d98c2eeb9aa2935",
+    "format" : "model",
+    "displayName" : "green.usdz"
+  },
+  {
+    "libraryIdentifier" : "fa36df28107a3668d2be231efa98c67a",
+    "format" : "model",
+    "displayName" : "yellow.usdz"
+  },
+  {
+    "libraryIdentifier" : "31de68ef3419ddfb08f83957a0e0d423",
+    "format" : "model",
+    "displayName" : "pink.usdz"
+  }
 ]
